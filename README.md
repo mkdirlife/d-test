@@ -10,7 +10,7 @@
   
 
 개발환경 및 협업<br>
-Visual Studio Code, <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><br>
+Visual Studio Code, <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><br>
 Git, <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"><br>
 Github, <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"><br>
 Discord <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"><br>
