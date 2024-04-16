@@ -8,6 +8,26 @@
 - edit-md 브랜치에서 수정해보기
 - 하나 더 해볼까?
 
+## 데이터베이스 모델링(ER Diagram)
+![alt text](https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fa2c403b4d3b140178ee7e0127531b31f)
+- 커스텀 사용자 관련 테이블
+   1. accounts_customuser : 커스텀 사용자 모델을 저장하는 테이블입니다. user_id 필드는 auth_user 테이블의 id를 참조합니다.
+   2. accounts_customuser_user_permissions : 커스텀 사용자와 권한 간의 다대다 관계를 저장하는 테이블입니다. customuser_id 필드는 accounts_customuser 테이블의 id를 참조하고, permission_id 필드는 auth_permission 테이블의 id를 참조합니다.
+   3. accounts_customuser_groups : 커스텀 사용자와 그룹 간의 다대다 관계를 저장하는 테이블입니다. customuser_id 필드는 accounts_customuser 테이블의 id를, group_id 필드는 auth_group 테이블의 id를 참조합니다.
+- 토큰 관련 테이블
+   1. accounts_usertoken : 사용자의 토큰을 저장하는 테이블입니다. user_id 필드는 auth_user 테이블의 id를 참조하고, token, blacklist_outstandingtoken, blacklist_blacklistedtoken 필드는 토큰 관련 정보를 나타냅니다.
+- 채팅 관련 테이블
+   1. chat_chatroom : 채팅방 정보를 저장하는 테이블입니다. name 필드는 채팅방의 이름을 나타냅니다.
+   2. chat_message : 채팅 메시지 정보를 저장하는 테이블입니다. content 필드는 메시지 내용을, timestamp 필드는 메시지 전송 시간을 나타냅니다. room_id 필드는 chat_chatroom 테이블의 id를 참조하고, sender_id 필드는 메시지를 보낸 사용자의 id를 참조합니다.
+- 알림 관련 테이블
+   1. alarm_alarm : 알림 정보를 저장하는 테이블입니다. alarm_id 필드는 알림의 id를 나타내고, content 필드는 알림 내용을 저장합니다. created_at 필드는 알림이 생성된 시간을 나타냅니다.
+   2. alarm_alarmsettings : 사용자별 알림 설정 정보를 저장하는 테이블입니다. user_id 필드는 auth_user 테이블의 id를 참조하고, alarm_id 필드는 alarm_alarm 테이블의 id를 참조합니다.
+   3. alarm_alarmtype : 알림 유형 정보를 저장하는 테이블입니다. code 필드는 알림 유형의 코드를 나타내고, name 필드는 알림 유형의 이름을 나타냅니다.
+- 유틸 관련 테이블
+   1. utils_status: 다양한 상태값을 정의하고 저장하는 테이블입니다. is_active 필드는 상태값이 활성화되어 있는지 여부를 나타냅니다.
+   2. utils_tag: 태그 정보를 저장하는 테이블입니다. name 필드는 태그 이름을 나타냅니다.
+
+
 
 개발환경 및 협업<br>
 <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
