@@ -1,12 +1,106 @@
-# d-test
-## 수정됨
-### 변경
-### 2024 03 29 날씨 : 맑음
-- git 안 어렵다.
+# 프로젝트 폴더 구조
+```
+📦safe-eye
+┣ 📦accounts
+┃ ┣ 📂fixtures
+┃ ┃ ┗ 📜initial_data.json
+┃ ┣ 📜admin.py
+┃ ┣ 📜apps.py
+┃ ┣ 📜forms.py
+┃ ┣ 📜models.py
+┃ ┣ 📜permissions.py
+┃ ┣ 📜serializers.py
+┃ ┣ 📜tests.py
+┃ ┣ 📜urls.py
+┃ ┣ 📜views.py
+┃ ┗ 📜__init__.py
+┣ 📦alarm
+┃ ┣ 📂fixtures
+┃ ┃ ┗ 📜initial_data.json
+┃ ┣ 📜admin.py
+┃ ┣ 📜apps.py
+┃ ┣ 📜models.py
+┃ ┣ 📜serializers.py
+┃ ┣ 📜tests.py
+┃ ┣ 📜urls.py
+┃ ┣ 📜views.py
+┃ ┗ 📜__init__.py
+┣ 📦chat
+┃ ┣ 📜admin.py
+┃ ┣ 📜apps.py
+┃ ┣ 📜models.py
+┃ ┣ 📜serializers.py
+┃ ┣ 📜tests.py
+┃ ┣ 📜urls.py
+┃ ┣ 📜views.py
+┃ ┗ 📜__init__.py
+┣ 📦config
+┃ ┣ 📜asgi.py
+┃ ┣ 📜debug.log
+┃ ┣ 📜schema.py
+┃ ┣ 📜settings.py
+┃ ┣ 📜urls.py
+┃ ┗ 📜wsgi.py
+┣ 📦media
+┃ ┣ 📂fixtures
+┃ ┃ ┗ 📜initial_data.json
+┃ ┣ 📜admin.py
+┃ ┣ 📜apps.py
+┃ ┣ 📜models.py
+┃ ┣ 📜schema.py
+┃ ┣ 📜serializers.py
+┃ ┣ 📜tests.py
+┃ ┣ 📜urls.py
+┃ ┣ 📜views.py
+┃ ┗ 📜__init__.py
+┣ 📦notice
+┃ ┣ 📂fixtures
+┃ ┃ ┣ 📜initial_data.json
+┃ ┃ ┗ 📜mock_data_gen.py
+┃ ┣ 📜admin.py
+┃ ┣ 📜apps.py
+┃ ┣ 📜models.py
+┃ ┣ 📜schema.py
+┃ ┣ 📜serializers.py
+┃ ┣ 📜tests.py
+┃ ┣ 📜urls.py
+┃ ┗ 📜views.py
+┣ 📦utils
+┃ ┣ 📂fixtures
+┃ ┃ ┗ 📜initial_data.json
+┃ ┣ 📜admin.py
+┃ ┣ 📜apps.py
+┃ ┣ 📜mixins.py
+┃ ┣ 📜models.py
+┃ ┣ 📜serializers.py
+┃ ┣ 📜tests.py
+┃ ┣ 📜urls.py
+┃ ┣ 📜views.py
+┃ ┗ 📜__init__.py
+┣ 📜.env
+┣ 📜.env.example
+┣ 📜.gitignore
+┣ 📜a-team.png
+┣ 📜commands.sh
+┣ 📜db.sqlite3
+┣ 📜manage.py
+┣ 📜README.md
+┗ 📜requirements.txt
+```
 
-- 또 수정해보기
-- edit-md 브랜치에서 수정해보기
-- 하나 더 해볼까?
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 데이터베이스 모델링(ER Diagram)
 ![alt text](https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fa2c403b4d3b140178ee7e0127531b31f)
