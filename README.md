@@ -42,7 +42,7 @@
 컴퓨터 비전 및 이미지 처리<br>
 <img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">  <img src="https://img.shields.io/badge/anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white">
 <img src="https://img.shields.io/badge/CUDA-4285F4?style=for-the-badge&logo=CUDA&logoColor=white">
-<img src="https://img.shields.io/badge/slowfast모델-E60000?style=for-the-badge&logo=slowfast모델&logoColor=white">
+<img src="https://img.shields.io/badge/slowfastModel-E60000?style=for-the-badge&logo=slowfastModel&logoColor=white">
 
 
 
