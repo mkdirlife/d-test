@@ -7,3 +7,6 @@
 - 또 수정해보기
 - edit-md 브랜치에서 수정해보기
 - 하나 더 해볼까?
+  
+Python
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
